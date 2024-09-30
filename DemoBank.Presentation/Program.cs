@@ -16,9 +16,41 @@
         }
         if(userName == "system" && password == "manager")      
         {
-            System.Console.WriteLine("TO DO: Main menu here");
+            int mainMenuChoice = -1;
+            do
+            {
+                System.Console.WriteLine("\n:::Main menu:::");
+                System.Console.WriteLine("1. Customers");
+                System.Console.WriteLine("2. Account");
+                System.Console.WriteLine("3. Funds Transfer");
+                System.Console.WriteLine("4. Funds Transfer Statement");
+                System.Console.WriteLine("5. Account Statement");
+                System.Console.WriteLine("0. Exit");
+                System.Console.Write("Enter choice: ");
+                mainMenuChoice = int.Parse(System.Console.ReadLine());
+
+                switch (mainMenuChoice)
+                {
+                    case 1: // Display customer menu
+                        break;
+                    case 2: // Display Account
+                        break;
+                    case 3: // Display Funds Transfer
+                        break;
+                    case 4: // Display Funds Transfer Statement
+                        break;
+                    case 5: // Display Account Statement
+                        break;
+                    case 0: // Display Exit
+                        break;
+                }
+            } while (mainMenuChoice != 0);
+        } 
+        else
+        {
+            System.Console.WriteLine("Invalid username or password");
         }
-        System.Console.WriteLine("Thank you! Visit again!");
+        System.Console.WriteLine("Thank you! Visit again");
         System.Console.ReadKey();
     }
 }
