@@ -18,7 +18,7 @@
         {
             System.Console.WriteLine("TO DO: Main menu here");
         }
-        System.Console.WriteLine("Thank you! Visit again");
+        System.Console.WriteLine("Thank you! Visit again!");
         System.Console.ReadKey();
     }
 }
